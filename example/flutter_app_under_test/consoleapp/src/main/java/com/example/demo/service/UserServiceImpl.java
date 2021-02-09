@@ -2,12 +2,12 @@ package com.example.demo.service;
 
 import com.example.demo.entity.User;
 import com.example.demo.repositories.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
-    @Autowired
     private UserRepository userRepository;
 
     @Override

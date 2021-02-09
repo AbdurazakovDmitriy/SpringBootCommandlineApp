@@ -27,12 +27,12 @@ public class CommandLineUserApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        List<User> users = userParser.getUsersFromPaths(files);
-        users.forEach(user -> {
-            if(userValidator.validate(user)) {
-                User us = usersStorage.save(user);
-                System.out.println("User " + us + " was added to database");
-            }
-        });
+//        List<User> users = userParser.getUsersFromPaths(files);
+//        users.forEach(user -> {
+//            if(userValidator.validate(user)) {
+//                User us = usersStorage.save(user);
+//                System.out.println("User " + us + " was added to database");
+//            }
+//        });
     }
 }
